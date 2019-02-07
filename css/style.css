@@ -46,7 +46,7 @@ html{
   height: 85px;
   width: 100%;
   /* border:2px solid hotpink; */
-  background-image: linear-gradient(#408bfdf5, #408bfdf5, #4a91fc);
+  background-image: linear-gradient(rgba(110, 28, 11, 0.85), rgba(92, 24, 10, 0.85), rgba(78, 20, 8, 0.85));
   position:fixed;
   transition: top 0.5s;
 
