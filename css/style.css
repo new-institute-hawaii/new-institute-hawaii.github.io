@@ -1573,9 +1573,9 @@ form textarea{
   /* border:2px solid green; */
   height: 350px;
   width: 350px;
-  background-image: url(../img/beach-clouds-daytime-994605.jpg);
+  /* background-image: url(../img/beach-clouds-daytime-994605.jpg); */
   background-size: cover;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
 }
 
 .cm-cont{
@@ -1586,6 +1586,7 @@ form textarea{
   padding:0px 20px 0px 20px;;
   display: flex;
   flex-direction: column;
+  color:black;
 }
 
 
