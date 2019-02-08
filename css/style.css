@@ -177,12 +177,13 @@ height:70%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(15, 15, 15, 0.651);
+  /* background-color: rgba(15, 15, 15, 0.651); */
   /* box-shadow: var(--shadow); */
 }
 
 .landing-button:hover{
   box-shadow: var(--shadow);
+    background-color: rgba(114, 114, 114, 0.212);
 }
 
 
