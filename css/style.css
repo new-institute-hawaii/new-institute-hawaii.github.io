@@ -253,7 +253,7 @@ article a:hover{
 
 /* About Container Begins*/
 .about-section{ 
-  height: 140vh; 
+  height: 150vh; 
   width:100%;
   /* border:10px solid green; */
   background:rgb(241, 241, 241);
@@ -627,6 +627,7 @@ border:2px solid rgb(112, 109, 104);
     flex-direction: column;
     align-items: center;
     font-family: 'Thasadith', sans-serif;
+    color:black;
   }
   
 /* Calander Course Section */
@@ -644,6 +645,8 @@ border:2px solid rgb(112, 109, 104);
     /* margin-top:10px; */
     
   }
+
+  
 
   .explain{
     width:100%;
@@ -1360,105 +1363,7 @@ margin-top:95px;
 }
 /* Resource Container Ends */
 
-    /* Membership Container Begins */
-.ship-container{
-  /* border:3px solid tomato; */
-  height: 100vh;
-  width:100%;
-  display: flex;
-  flex-flow: column;
-  /* justify-content: space-evenly; */
-  align-items: center;
-  background-color: rgb(255, 252, 248);
-  
-}
-
-.ship-title{
-  width:100%;
-  height:40px;
-  margin-top:80px;
-  /* border:4px groove rebeccapurple; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size:2.5rem;
-  font-family: 'Thasadith', sans-serif;
-  font-weight: 40px;
-  color:rgba(0, 22, 82, 0.966);
-  font-variant: small-caps;
-padding:50px;
-
-  
-}
-
-.ship-container h1{
-    border-bottom: 1px solid rgba(206, 206, 206, 0.685);
-}
-
-
-.ship-info-wrapper{
-  /* border:5px solid yellow; */
-  width:900px;
-  height: 600px;
-  box-shadow: var(--shadow);
-}
-
-.ship-picture{
-  /* border:2px solid green; */
-  height: 40%;
-  width:100%;
-  background-image: url(../img/test.background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.ship-info-header{
-  width:100%;
-  height:40px;
-  /* border:4px groove rebeccapurple; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size:1.5rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
-  color:rgba(0, 22, 82, 0.966);
-  padding-bottom:10px;
-  padding-top:30px;
- 
-}
-
-.ship-info h2{
-  border-bottom: 1px solid rgba(206, 206, 206, 0.685);
-}
-
-.ship-info{
-  /* border:4px dashed red; */
-  /* background-color: rgb(248, 241, 231); */
-  height: 60%;
-  text-align: center;
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-}
-
-.ship-info p{
-  line-height: 25px;
-  font-size: 1.2rem;
-  font-family: 'Thasadith', sans-serif;
-  padding:25px;
-}
-
-#ship-info-para-bold{
-  font-weight: bold;
-text-decoration: underline solid grey;
-
-}
-
-
-
-/* Membership Container Ends */
-
+   
 /* Contact Container Begins */
 
 .contact-container{
@@ -1839,6 +1744,33 @@ margin-top: 35px;
 
 
 /* Log In Section Ends */
+
+/* Coming Soon */
+
+
+.coming-soon-container{
+  width:100%;
+  height: 100vh;
+  /* border:2px solid red; */
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#coming-soon{
+  background-color:rgb(43, 43, 43);
+}
+
+#coming-soon:hover{
+  background-color:rgb(90, 90, 90);
+}
+
+#soon-icon{
+  color:rgb(182, 182, 182);
+}
+
+
+
 
 
 /* Footer */
@@ -2579,13 +2511,13 @@ justify-content: flex-start;
     font-family: 'Josefin Sans', sans-serif;
     color: black;
     margin-bottom:10px;
-    margin-top:50px;
+    margin-top:25px;
  
   }
   
   #abouth2{
     font-size:1.5rem;
-    line-height: 40px;
+    line-height: 30px;
     /* border:2px solid yellow; */
     text-align: center;
     color:black;
@@ -3519,101 +3451,6 @@ grid-row:2;
   border-bottom:1px solid rgba(158, 158, 158, 0.884);
 }
 /* Resource Container Ends */
-
-  /* Membership Container Begins */
-.ship-container{
-  /* border:3px solid tomato; */
-  height: 100vh;
-  width:100%;
-  display: flex;
-  flex-flow: column;
-  /* justify-content: space-evenly; */
-  align-items: center;
-  background-color: rgb(255, 252, 248);
-  
-}
-
-.ship-title{
-  width:100%;
-  height:40px;
-  margin-top:0px;
-  /* border:4px groove rebeccapurple; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size:2.5rem;
-  font-family: 'Thasadith', sans-serif;
-  font-weight: 40px;
-  color:rgba(0, 22, 82, 0.966);
-  font-variant: small-caps;
-
-
-  
-}
-
-.ship-container h1{
-    border-bottom: 1px solid rgba(206, 206, 206, 0.685);
-}
-
-
-.ship-info-wrapper{
-  /* border:5px solid yellow; */
-  width:350px;
-  height: 550px;
-  box-shadow: var(--shadow);
-}
-
-.ship-picture{
-  /* border:2px solid green; */
-  height: 40%;
-  width:100%;
-  background-image: url(../img/test.background.jpg);
-  background-repeat: no-repeat;
-}
-
-.ship-info-header{
-  width:100%;
-  height:40px;
-  /* border:4px groove rebeccapurple; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size:1rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
-  color:rgba(0, 22, 82, 0.966);
-  padding-bottom:10px;
-  padding-top:30px;
- 
-}
-
-.ship-info h2{
-  border-bottom: 1px solid rgba(206, 206, 206, 0.685);
-}
-
-.ship-info{
-  /* border:4px dashed red; */
-  /* background-color: rgb(248, 241, 231); */
-  height: 60%;
-  text-align: center;
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-}
-
-.ship-info p{
-  line-height: 15px;
-  font-size: 1rem;
-  font-family: 'Thasadith', sans-serif;
-  padding:30px;
-}
-
-
-#ship-info-para-bold{
-  padding:0px;
-}
-
-/* Membership Container Ends */
 
 
 
