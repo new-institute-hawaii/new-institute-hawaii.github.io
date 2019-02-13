@@ -1133,7 +1133,7 @@ grid-auto-rows: minmax(50px, auto);
 }
 
 #third-event-photo{
-  background-image:url("../img/Akina-test-two.jpg");
+  background-image:url("../img/KA1.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1237,8 +1237,8 @@ grid-row:5;
 
   #fourth-event-photo{
     /* border:2px solid green; */
-    background-image:url("../img/Ralph_Cossa-test.jpg");
-    background-position: top;
+    background-image:url("../img/RC2.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 150px; */
