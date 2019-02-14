@@ -628,7 +628,7 @@ border:2px solid rgb(112, 109, 104);
   .course-container{
     /* display: block; */
     margin-top:10px;
-    height: 130vh;
+    height: 225vh;
      background:rgba(255, 255, 255, 0.795);
     /* border:5px dashed rgb(238, 255, 0); */
     padding:20px;
@@ -640,7 +640,7 @@ border:2px solid rgb(112, 109, 104);
   }
   
 /* Calander Course Section */
-  .course-header{
+  .course-calender{
     /* display: block; */
     font-size:2.5rem;
     font-family: 'Josefin Sans', sans-serif;
@@ -653,6 +653,18 @@ border:2px solid rgb(112, 109, 104);
     justify-content: center;
     /* margin-top:10px; */
     
+  }
+
+  .course-header{
+    font-size:2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 40px;
+    border-bottom:.8px solid rgba(204, 204, 204, 0.432);
+    color:rgba(0, 22, 82, 0.966);
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:30px;
+    justify-content: center;
   }
 
   
@@ -2295,7 +2307,7 @@ height:100%;
     .course-container{
       /* display: block; */
       margin-top:10px;
-      height: 200vh;
+      height: 275vh;
        background:rgba(255, 255, 255, 0.795);
       /* border:5px dashed rgb(238, 255, 0); */
       padding:20px;
@@ -2304,12 +2316,9 @@ height:100%;
       align-items: center;
       font-family: 'Thasadith', sans-serif;
     }
-/* Courses Containter */
-.course-container{
-  height: 150vh;
-}
 
-}
+
+
 
 /* Courses Section */
 
@@ -2329,6 +2338,10 @@ height:100%;
   /* z-index: 0; */
 }
 
+
+
+
+}
 
 
 /* Mobile */
@@ -2810,7 +2823,7 @@ justify-content: flex-start;
   /* Course Container Begins*/
   .course-container{
     /* display: block; */
-    height: 200vh;
+    height: 400vh;
      background:rgba(255, 255, 255, 0.795);
     /* border:5px dashed rgb(238, 255, 0); */
     margin-top:0px;
@@ -3913,12 +3926,10 @@ font-style: oblique;
   color:rgb(169, 242, 255);
 }
 
-}
 
-/* Campaign Class */
 
-.class-container{
-  widows: 100%;
-  height: 250vh;
-  border:3px solid red;
+
+
+
+
 }
