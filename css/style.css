@@ -1569,6 +1569,7 @@ form textarea{
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
+  color:black;
 
 }
 
@@ -1633,6 +1634,7 @@ border-bottom:.5px solid rgba(29, 29, 233, 0.774);
   /* border:2px groove gold; */
   line-height: 25px;
   color:black;
+  font-weight: bold;
 }
 
 .donate-paragraph2{
@@ -1641,6 +1643,7 @@ border-bottom:.5px solid rgba(29, 29, 233, 0.774);
   display: flex;
   align-items: center;
   color:black;
+  font-weight: bold;
 }
 
 .donate-amount{
@@ -1669,6 +1672,7 @@ border-bottom:.5px solid rgba(29, 29, 233, 0.774);
 
 .donate-thank-you{
   border-bottom:1px solid rgba(207, 207, 207, 0.952);
+  font-weight: bold;
 
 }
 
