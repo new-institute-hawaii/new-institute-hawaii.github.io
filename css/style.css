@@ -402,7 +402,7 @@ background-size: contain;
   background-repeat: no-repeat;
   background-position:center;
   background-size: contain;
-margin-bottom:235px;
+/* margin-bottom:235px; */
         }
         
 
@@ -411,7 +411,7 @@ margin-bottom:235px;
   /* height: 80vh; */
   width:100%;
   /* border:5px solid rgb(204, 0, 255); */
-  padding:200px;
+  padding:125px;
   padding-top:40px;
   font-family: 'Thasadith', sans-serif;
   display: flex;
@@ -1007,10 +1007,11 @@ grid-row: 1/2;
 
 #second-event-photo{
   /* border-right:2px solid rgba(203, 245, 234, 0.904); */
-  background-image: url("../img/SH1.jpg");
-  background-position: top right;
+  background-image: url("../img/SH3.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
   /* display: flex; */
   /* flex-direction: column; */
   /* justify-content: flex-start; */
@@ -1427,7 +1428,7 @@ border-bottom: 1px solid rgba(184, 184, 184, 0.884);
   width:95%;
   height: 675px;
   margin:20px;
-  background-color: #fefeff;
+  /* background-color: #fefeff; */
   /* box-shadow: var(-- shadow); */
   font-size: 1.3rem;
   font-family: 'Thasadith', sans-serif;
@@ -1492,7 +1493,7 @@ form textarea{
 
 .nauru-contact-2{
   width:95%;
-  height: 800px;
+  height: 700px;
   margin:20px;
   background-color: #e7edf7;
   box-shadow: var(--shadow);
@@ -1894,7 +1895,7 @@ font-style: oblique;
 .sidebar {
   width: 0;
   position:fixed;
-  z-index:1;
+  z-index:0;
   top:0;
   right:0;
   overflow-x: hidden;
@@ -1960,13 +1961,7 @@ width:30px;
 }
 
 
-#nih-center{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: rgba(15, 15, 15, 0.651);
-}
+
 
 /* Header & Buttons Container Ends */
 
@@ -1975,26 +1970,68 @@ background-color: rgba(15, 15, 15, 0.651);
   /* display: flex;
   flex-direction: column; */
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 'quote quote quote'
-  'icon-1 icon-2 icon-3';
+  grid-template-rows: repeat(4, 1fr);
+  /* grid-template-areas: */
+  /* 'quote quote quote' */
+  /* 'icon-1 icon-2 icon-3'; */
   /* border:4px solid rebeccapurple; */
   padding:0px;
   grid-gap:0px;
   width:100%;
-  height: 84vh;
+  height: 100vh;
   
 }
 
+#nih-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(15, 15, 15, 0.651);
+  /* border:3px solid red; */
+  grid-column: 1/5;
+  grid-row:2;
+  }
+
+  
+#icon-container1{
+  width:100%;
+  height: 10rem;
+  grid-column: 1;
+  grid-row:3;
+  font-size: 1.2rem;
+}
+
+#course-landing{
+ 
+  font-size: 1.8rem;
+}
+#icon-container2{
+  width:100%;
+  height: 10rem;
+  grid-column: 2;
+  grid-row:3;
+  font-size: 1.2rem;
+}
+#icon-container3{
+  width:100%;
+  height: 10rem;
+  grid-column: 3;
+  grid-row:3;
+  font-size: 1.2rem;
+}
+
 .landing-grid h1{
-  font-size:2rem;
+  font-size:3rem;
   margin:0 auto;
   font-family: 'Thasadith', sans-serif;
   color:rgb(248, 243, 234);
   /* padding:50px; */
+ 
 }
 
 .landing-grid h2{
-  font-size:1.2rem;
+  font-size:2rem;
   font-family: 'Thasadith', sans-serif;
   margin-left:50px;
   margin-bottom:50px;
@@ -2008,18 +2045,6 @@ background-color: rgba(15, 15, 15, 0.651);
 }
 
 
-#icon-container1{
-  width:100%;
-  height: 10rem;
-}
-#icon-container2{
-  width:100%;
-  height: 10rem;
-}
-#icon-container3{
-  width:100%;
-  height: 10rem;
-}
 
 
 .landing-button{
@@ -2032,6 +2057,7 @@ height:100%;
   align-items: center;
   background-color: rgba(15, 15, 15, 0.651);
   /* box-shadow: var(--shadow); */
+
 }
 .landing-button:hover{
   box-shadow: var(--shadow);
@@ -2077,7 +2103,7 @@ height:100%;
   
   #abouth1{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     color: black;
@@ -2094,6 +2120,17 @@ height:100%;
     color:black;
     font-family: 'Thasadith', sans-serif;
   }
+
+  
+#abouth3{
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  margin-bottom:5px;
+  padding:20px;
+}
   
   .space{
     width:100%;
@@ -2108,6 +2145,7 @@ height:100%;
     width: 100%;
   background-color: rgb(255, 255, 255);
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-evenly;
     align-items: center;
   
@@ -2119,7 +2157,7 @@ height:100%;
     height: 50vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   margin-bottom:20px;
     
@@ -2184,7 +2222,7 @@ height:100%;
     background-repeat: no-repeat;
     background-position:center;
     background-size: contain;
-  margin-bottom:300px;
+  /* margin-bottom:300px; */
           }
           
   .about-background-2{
@@ -2326,10 +2364,11 @@ height:100%;
 
 #second-event-photo{
   /* border-right:2px solid rgba(203, 245, 234, 0.904); */
-  background-image: url("../img/SH1.jpg");
-  background-position: top center;
+  background-image: url("../img/SH4.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
   /* display: flex; */
   /* flex-direction: column; */
   /* justify-content: flex-start; */
@@ -2337,6 +2376,169 @@ height:100%;
   grid-row: 1/6;
   /* z-index: 0; */
 }
+
+
+
+
+/* Contact Container Begins */
+
+.contact-container{
+  /* border:4px solid fuchsia; */
+  height: 250vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-color: rgba(249, 249, 250, 0.747); 
+
+} 
+
+.contact-title{ 
+  width:100%;
+  height:75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:2.5rem;
+  font-family: 'Thasadith', sans-serif;
+  font-weight: 40px;
+  color:rgba(15, 50, 145, 0.966);
+  font-variant: small-caps;
+margin-top:15px;
+  
+} 
+
+.contact-title h1{
+  border-bottom:1px solid rgba(180, 180, 180, 0.884);
+}
+
+.nauru-contact{
+  width:80%;
+  height: 800px;
+  margin:20px;
+  background-color: #fefeff;
+  box-shadow: var(--shadow);
+  font-size: 1.3rem;
+  font-family: 'Thasadith', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border:2px solid green; */
+  /* justify-content: space-e */
+}
+
+.form-all{
+ width:850px;
+}
+
+#contact-header-top{
+  margin:30px;
+  color:rgba(15, 50, 145, 0.966);
+  font-size: 1.8rem;  
+
+}
+
+.nauru-contact form{
+  /* border:2px solid red; */
+  width:100%;
+  padding:0px 50px 0px 50px;
+  line-height: 40px;
+}
+form input{
+  border:1px solid rgb(161, 161, 161);
+  width:100%;
+  border-radius: 10px;
+  padding:10px;
+  margin-top:10px;
+}
+
+.submit-button{
+  border:1px solid rgba(15, 50, 145, 0.966);
+  background-color: rgb(253, 253, 253);
+  font-family: 'Josefin Sans', sans-serif;
+  color:rgba(13, 24, 119, 0.993);
+  /* margin-left:80px; */
+}
+
+.staff-directory{
+  border:1px solid olive;
+  background-color: rgb(253, 253, 253);
+  color:rgb(36, 48, 12);
+  padding:10px;
+  width:285px;
+  margin-top:30px;
+  border-radius: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+form textarea{
+  border:1px solid rgb(161, 161, 161);
+  width:100%;
+  border-radius: 10px;
+  height: 150px;
+}
+
+.nauru-contact-2{
+  width:80%;
+  height: 800px;
+  margin:20px;
+  background-color: #e7edf7;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-family: 'Thasadith', sans-serif;
+}
+
+
+
+#contact-header-mid{
+  margin:30px;
+  color:rgba(15, 50, 145, 0.966);
+  font-size: 1.8rem;  
+
+}
+
+
+.nauru-map{
+  /* border:2px solid green; */
+  height: 350px;
+  width: 350px;
+  background-image: url(../img/beach-clouds-daytime-994605.jpg);
+  background-size: cover;
+  box-shadow: var(--shadow);
+}
+
+.cm-cont{
+  /* border:2px solid orange; */
+  height: 200px;
+  width: 100%;
+  margin-bottom:50px;
+  padding:0px 20px 0px 20px;;
+}
+
+
+#mailing-address-name{
+  /* border:2px solid blue; */
+  font-weight: bold;
+  line-height: 30px;
+  padding-left: 25px;
+}
+
+.mail{
+  /* border:2px solid red; */
+  line-height: 30px;
+  padding-left: 25px;
+}
+
+
+
+
+/* Contact Container Ends */
+
 
 
 
@@ -2404,7 +2606,7 @@ height:100%;
   .sidebar {
     width: 0;
     position:fixed;
-    z-index:1;
+    z-index:0;
     top:0;
     right:0;
     overflow-x: hidden;
@@ -2484,9 +2686,9 @@ justify-content: flex-start;
   .landing-grid{
     /* display: flex;
     flex-direction: column; */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'quote quote quote'
-    'icon-1 icon-2 icon-3';
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-areas: 'quote quote quote' */
+    /* 'icon-1 icon-2 icon-3'; */
     /* border:4px solid rebeccapurple; */
     padding:0px;
     grid-gap:0px;
@@ -2517,18 +2719,24 @@ justify-content: flex-start;
     font-family: 'Thasadith', sans-serif;
   }
   
+  #course-landing{
+    font-size:.8rem;
+  }
 
   #icon-container1{
     width:100%;
     height: 10rem;
+    font-size:1rem;
   }
   #icon-container2{
     width:100%;
     height: 10rem;
+    font-size:1rem;
   }
   #icon-container3{
     width:100%;
     height: 10rem;
+    font-size:1rem;
   }
 
   
@@ -2550,7 +2758,7 @@ justify-content: flex-start;
 
   /* About Container Begins */
   .about-section{ 
-    height: 140vh; 
+    height: 200vh; 
     width:100%;
     /* border:10px solid green; */
     background:rgb(241, 241, 241);
@@ -2560,7 +2768,7 @@ justify-content: flex-start;
   
   
   .about-background-1{
-    height: 90vh;
+    height: 125vh;
     width:90%;
     margin-left:5%;
     margin-top: 20px;
@@ -2588,12 +2796,13 @@ justify-content: flex-start;
   
   #abouth1{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     color: black;
     margin-bottom:10px;
-    margin-top:25px;
+    margin-top:50px;
+    /* border:3px solid red; */
  
   }
   
@@ -2630,6 +2839,7 @@ justify-content: flex-start;
     width: 100%;
   background-color: rgb(255, 255, 255);
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   
@@ -2641,9 +2851,14 @@ justify-content: flex-start;
     height: 35%;
     width: 100%;
     display: flex;
-    justify-content: center;
+flex-direction: column;
+
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* padding:0px 20px 0px 20px; */
+    
+    /* justify-content: center; */
     align-items: center;
-  margin-bottom:0px;
+  /* margin-bottom:0px; */
     
   }
   
@@ -2674,26 +2889,30 @@ justify-content: flex-start;
     
   .part-logo-three{
       /* border:2px solid rebeccapurple; */
-      height: 150px;
+      height: 100px;
       width:125px;
     background-image: url("../img/gldi-logo.png");
     background-repeat: no-repeat;
     background-position:center;
     background-size: contain;
-    /* margin-left:60px; */
+  /* grid-column: 2; */
+    /* margin-left:75px; */
+    /* padding-left:75px; */
   
       }
   
       
   .part-logo-four{
         /* border:2px solid green; */
-        height: 150px;
+        height: 100px;
       width:125px;
     background-image: url("../img/wallbuilders-logo.png");
     background-repeat: no-repeat;
     background-position:center;
     background-size: contain;
-    /* margin-right:50px; */
+    grid-column: 4;
+    /* margin-right:75px; */
+    /* padding-right:75px; */
   
         }
   
@@ -2701,12 +2920,13 @@ justify-content: flex-start;
   .part-logo-five{
           /* border:2px solid rgb(0, 174, 255); */
       height: 100px;
-      width:100px;
+      /* width:125px; */
     background-image: url("../img/pac-rim-logo.png");
     background-repeat: no-repeat;
     background-position:center;
     background-size: contain;
-  margin-bottom:250px;
+  /* margin-bottom:500px; */
+  padding:0px;
           }
           
   
@@ -2737,11 +2957,7 @@ justify-content: flex-start;
     
   }
 
-  #abouth1{
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-align: center;
-  }
+
   
   #abouth2{
     font-size:.8rem;
@@ -3177,7 +3393,7 @@ font-weight: bold;
 
 #second-event-photo{
   border-right:2px solid rgba(203, 245, 234, 0.904);
-  background-image: url("../img/SH1.jpg");
+  background-image: url("../img/SH3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
