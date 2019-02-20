@@ -1645,7 +1645,7 @@ form textarea{
   height: 200px;
   width: 100%;
   margin-bottom:50px;
-  /* padding:0px 20px 0px 20px;; */
+  padding:0px 15px 0px 10px;;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1657,7 +1657,7 @@ form textarea{
   /* border:2px solid red; */
   width:85%;
   /* padding-left:35px; */
-  margin:35px;
+  /* margin:35px; */
   border-bottom: 1px solid grey;
 
 }
