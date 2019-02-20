@@ -576,7 +576,9 @@ grid-gap:10px;
 
 
 
-
+#date-padding{
+ margin-bottom:75px;
+}
 
 
 .desktop-course-container > a {
@@ -1589,7 +1591,7 @@ form textarea{
 
 .nauru-contact-2{
   width:95%;
-  height: 700px;
+  height: 750px;
   margin:20px;
   background-color: #e7edf7;
   box-shadow: var(--shadow);
@@ -1602,6 +1604,7 @@ form textarea{
   /* border:4px solid orange; */
   grid-row:3;
   grid-column: 5/9;
+  padding:0px 20px 0px 25px;
 }
 
 .nauru-contact-2>h1{
@@ -1629,9 +1632,10 @@ form textarea{
 
 .nauru-map{
   /* border:2px solid green; */
-  height: 350px;
-  width: 875px;
-  margin-left:10px;
+  height: 450px;
+  width: 950px;
+  display: flex;
+  /* margin-left:10px; */
   background-size: cover;
   /* box-shadow: var(--shadow); */
 }
@@ -1674,7 +1678,18 @@ form textarea{
 }
 
 
+.jotform-form{
+  /* border:2px solid red; */
+  font-family: 'Thasadith', sans-serif;
+  height: 125vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--lightshadow);
 
+}
 
 
 
