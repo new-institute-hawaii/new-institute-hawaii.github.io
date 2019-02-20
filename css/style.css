@@ -3,6 +3,7 @@
   --dark:rgba(51, 51, 51, 0.507);
   --light:#fff;
   --shadow: 0 1px 5px rgba(75, 75, 75, 0.945);
+  --lightshadow:0 1px 1px rgba(158, 158, 158, 0.945);
 }
 
 html{
@@ -253,9 +254,9 @@ article a:hover{
 
 /* About Container Begins*/
 .about-section{ 
-  height: 150vh; 
+  height: 200vh; 
   width:100%;
-  /* border:10px solid green; */
+  border:8px solid green;
   background:rgb(241, 241, 241);
   /* display: flex; */
   
@@ -263,7 +264,7 @@ article a:hover{
 
 
 .about-background-1{
-  height: 80vh;
+  height: 100vh;
   width:90%;
   margin-left:5%;
   margin-top: 20px;
@@ -285,23 +286,28 @@ flex-direction: column;
 justify-content: center;
 align-items:center;
 /* margin:20px; */
-padding:100px;
+padding-left:200px;
+padding-right:200px;
+padding-top:50px;
+padding-bottom:50px;
+/* padding-bottom:200px; */
 }
 
 #abouth1{
   font-weight: bold;
-  font-size: 2rem;
+  font-size:4rem;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-  color: black;
+  color: rgb(255, 182, 23);
   margin-bottom:20px;
+  /* border:2px solid rebeccapurple; */
 }
 
 #abouth2{
-  font-size:1.5rem;
-  line-height: 40px;
+  font-size:1.8rem;
+  line-height: 30px;
   /* border:2px solid yellow; */
-  text-align: center;
+  text-align: left;
   color:black;
   font-family: 'Thasadith', sans-serif;
 }
@@ -473,20 +479,108 @@ background-size: contain;
 }
 
 .desktop-course-container{
-height:50vh;
+height:65vh;
 /* border:3px groove orangered; */
-display: grid;
-grid-gap:0px;
-grid-template-columns: repeat(10, 1fr);
-grid-template-rows: repeat(2,1fr);
-padding:0px;
-
-margin:10px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+/* grid-gap:20px; */
+/* grid-template-columns: repeat(10, 1fr); */
+/* grid-template-rows: repeat(3,1fr); */
+/* padding:50px; */
+/* margin:10px; */
 
 }
 
+.dk-bx-search{
+  /* border:3px solid magenta; */
+  height: 500px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-top:40px;
+}
+
+.search-box{
+  height: 470px;
+  width: 80%;
+  /* border:1px solid grey; */
+  box-shadow: var(--lightshadow);
+padding:5px 10px 0px 50px;
+display: grid;
+grid-gap:10px;
+}
+
+.find-our-courses{
+  color:rgba(0, 22, 82, 0.966);
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  height: 100px;
+  /* border:3px solid rebeccapurple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-our-courses>h1{
+  border-bottom:1px solid rgb(224, 224, 224);
+}
+
+
+.find-by{
+  /* border:2px solid red; */
+  height: 145px;
+  padding:15px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-gap:20px;
+}
+
+.or-container{
+  /* border:2px solid hotpink; */
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:rgba(0, 22, 82, 0.966);
+}
+
+
+.subject-box{
+  /* border:2px solid green; */
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5rem;
+  color:rgba(0, 22, 82, 0.966);
+  font-family: 'Josefin Sans', sans-serif;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.search-container{
+  height: 45px;
+  width:100%;
+  border:1px solid rgb(170, 170, 170);
+  grid-column: 1/4;
+  grid-row: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding:10px;
+  color:rgba(0, 22, 82, 0.966);
+}
+
+
+
+
+
+
 .desktop-course-container > a {
-  /* border:4px groove magenta; */
+  /* border:4px groove green; */
   height: 200px;
   width:200px;
   grid-row-start: 2;
@@ -497,23 +591,25 @@ margin:10px;
 
 /* Desktop Courses Section */
 #dk-bx-cntr{
-margin-bottom:90px;
-  height: 250px;
-  grid-row-start: 2;
-  grid-column-end:span 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding:20px;
+/* margin-bottom:90px; */
+  height: 500px;
+  width:100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* align-content: center; */
+  padding:30px;
+  /* border:8px solid red; */
 
 }
 
 
 .courses-box{
-  width:190px;
-  height: 200px;
-  border:1px solid rgba(206, 206, 206, 0.767);
+  width:225px;
+  height: 225px;
+  /* border:8px solid red; */
   grid-row-start: 2;
   display: flex;
   flex-direction: column;
@@ -522,7 +618,7 @@ margin-bottom:90px;
   /* align-content: ; */
   padding:20px;
   margin:10px;
-  border-radius: 5px;
+  border-radius: 0px;
   box-shadow: var(--shadow);
 } 
 
@@ -537,12 +633,12 @@ margin-bottom:90px;
 
 #careers{
 background-color:rgba(240, 32, 32, 0.87);
-border:2px solid blanchedalmond;
+/* border:2px solid blanchedalmond; */
 }
 
 #careers:hover{
-background-color:rrgba(253, 29, 29, 0.993);
-border:2px solid rgba(167, 165, 163, 0.89);
+background-color:rgba(253, 29, 29, 0.993);
+/* border:2px solid rgba(167, 165, 163, 0.89); */
   }
 
   .icon-box, .box-title{
@@ -551,76 +647,76 @@ border:2px solid rgba(167, 165, 163, 0.89);
 
 #communication{
   background-color:rgba(5, 189, 45, 0.87);
-  border:2px solid blanchedalmond;
+  /* border:2px solid blanchedalmond; */
   }
     
     
 #communication:hover{
 background-color:rgba(2, 201, 45, 0.87);
-border:2px solid rgba(167, 165, 163, 0.89);
+/* border:2px solid rgba(167, 165, 163, 0.89); */
       }
 
 #fundraising{
 background-color:rgba(32, 63, 240, 0.87);
-border:2px solid blanchedalmond;
+/* border:2px solid blanchedalmond; */
         }
         
 #fundraising:hover{
   background-color:rgba(65, 92, 245, 0.918);
-  border:2px solid rgba(167, 165, 163, 0.89);
+  /* border:2px solid rgba(167, 165, 163, 0.89); */
           }
 
 #campaign{
   background-color:rgba(151, 45, 98, 0.87);
-  border:2px solid blanchedalmond;
+  /* border:2px solid blanchedalmond; */
             }
 #campaign:hover{
   background-color:rgba(133, 23, 65, 0.87);
-  border:2px solid rgba(167, 165, 163, 0.89);
+  /* border:2px solid rgba(167, 165, 163, 0.89); */
               }
 
 #activism{
   background-color:rgba(35, 90, 116, 0.87);
- border:2px solid blanchedalmond;}
-
+ /* border:2px solid blanchedalmond;} */
+}
 #activism:hover{
   background-color:rgba(42, 131, 119, 0.925);
-  border:2px solid rgba(167, 165, 163, 0.89);
+  /* border:2px solid rgba(167, 165, 163, 0.89); */
 }
 #campus-activism{
   background-color: rgba(207, 68, 17, 0.979);
-  border:2px solid blanchedalmond;
+  /* border:2px solid blanchedalmond; */
 }
 #campus-activism:hover{
   background-color: rgba(223, 71, 16, 0.986);
-  border:2px solid rgba(167, 165, 163, 0.89);
+  /* border:2px solid rgba(167, 165, 163, 0.89); */
 }
 #beyond-ideas{
-background-color:rgba(37, 31, 83, 0.801);
-border:2px solid blanchedalmond;
+  background-color: rgba(207, 68, 17, 0.979);
+/* border:2px solid blanchedalmond; */
 }
 
 #beyond-ideas:hover{
-  background-color:rgba(47, 34, 122, 0.966);
-  border:2px solid rgba(167, 165, 163, 0.89);
+  background-color: rgba(223, 71, 16, 0.986);
+  /* border:2px solid rgba(167, 165, 163, 0.89); */
 } 
 
 #servant-leadership{
 background-color:rgba(59, 39, 68, 0.945);
-border:2px solid blanchedalmond;
+/* border:2px solid blanchedalmond; */
                         }
 #servant-leadership:hover{
 background-color:rgba(57, 27, 71, 0.945);
-border:2px solid rgb(112, 109, 104);
+/* border:2px solid rgb(112, 109, 104); */
                           } 
 
 #footsteps-to-freedom{
 background-color:rgba(39, 68, 39, 0.945);
-border:2px solid blanchedalmond;
+/* border:2px solid blanchedalmond; */
 }
 #footsteps-to-freedom:hover{
 background-color:rgba(42, 80, 42, 0.945);
-border:2px solid rgb(112, 109, 104);
+/* border:2px solid rgb(112, 109, 104); */
 } 
                           
 /* Calander Courses Container Begins */
@@ -1499,7 +1595,7 @@ form textarea{
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   font-size: 1.3rem;
   font-family: 'Thasadith', sans-serif;
@@ -1508,7 +1604,7 @@ form textarea{
   grid-column: 5/9;
 }
 
-.nauru-contact-2>h1:first-child{
+.nauru-contact-2>h1{
   /* border:2px solid red; */
   width:85%;
   /* padding-left:35px; */
@@ -1520,13 +1616,13 @@ form textarea{
 
 
 #contact-header-mid{
-  margin:30px;
+  margin-top:30px;
   color:rgba(15, 50, 145, 0.966);
   font-size: 1.8rem; 
-  border-bottom: 1px solid grey; 
+  border-bottom: 1px solid rgb(201, 200, 200); 
   display: flex;
-  justify-content: center;
-  padding-bottom:50px;
+  justify-content: flex-start;
+  /* padding-bottom:50px; */
 
 }
 
@@ -1534,8 +1630,8 @@ form textarea{
 .nauru-map{
   /* border:2px solid green; */
   height: 350px;
-  width: 350px;
-  /* background-image: url(../img/beach-clouds-daytime-994605.jpg); */
+  width: 875px;
+  margin-left:10px;
   background-size: cover;
   /* box-shadow: var(--shadow); */
 }
@@ -1545,13 +1641,23 @@ form textarea{
   height: 200px;
   width: 100%;
   margin-bottom:50px;
-  padding:0px 20px 0px 20px;;
+  /* padding:0px 20px 0px 20px;; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   color:black;
 }
+
+.cm-cont>h1{
+  /* border:2px solid red; */
+  width:85%;
+  /* padding-left:35px; */
+  margin:35px;
+  border-bottom: 1px solid grey;
+
+}
+
 
 
 #mailing-address-name{
@@ -2065,9 +2171,9 @@ height:100%;
   /* About Container */
 
   .about-section{ 
-    height: 160vh; 
+    height: 200vh; 
     width:100%;
-    /* border:10px solid green; */
+    border:10px solid green;
     background:rgb(241, 241, 241);
     /* display: flex; */
     
@@ -2089,7 +2195,7 @@ height:100%;
   }
   
   .header-text-one-container{
-    /* border:2px solid red; */
+    border:2px solid red;
     height: 40%;
     width: 100%;
   display: flex;
@@ -2315,7 +2421,8 @@ height:100%;
   .courses-box{
     width:190px;
     height: 200px;
-    border:1px solid rgba(206, 206, 206, 0.767);
+    /* border:1px solid rgba(206, 206, 206, 0.767); */
+    /* border:4px solid red; */
     grid-row-start: 2;
     display: flex;
     flex-direction: column;
@@ -2354,6 +2461,12 @@ height:100%;
       align-items: center;
       font-family: 'Thasadith', sans-serif;
     }
+
+    .dk-bx-search{
+      /* border:3px solid magenta; */
+     display: none;
+    }
+    
 
 
 
@@ -2979,7 +3092,7 @@ flex-direction: column;
   }
   
 .desktop-course-container{
-  height:330vh;
+  height:300vh;
   /* border:3px groove orangered; */
   display: flex;
   flex-direction: column;
@@ -3007,7 +3120,7 @@ flex-direction: column;
     align-items: center;
     align-content: center;
     /* flex-shrink:2; */
-    padding:20px;
+    padding:0px 20px 0px 20px;
   
   }
   
@@ -3043,12 +3156,19 @@ flex-direction: column;
      background:rgba(255, 255, 255, 0.795);
     /* border:5px dashed rgb(238, 255, 0); */
     margin-top:0px;
-    padding:20px;
+    padding:0px 20px 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Thasadith', sans-serif;
   }
+
+  
+  .dk-bx-search{
+    /* border:3px solid magenta; */
+   display: none;
+  }
+  
   
 
   .course-header{
@@ -3058,7 +3178,7 @@ flex-direction: column;
     font-weight: 40px;
     border-bottom:.8px solid rgba(204, 204, 204, 0.432);
     color:rgba(0, 22, 82, 0.966);
-    margin-bottom:15px;
+    margin-bottom:0px;
     font-variant: small-caps;
     /* margin-top:10px; */
     
