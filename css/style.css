@@ -1627,7 +1627,7 @@ form textarea{
   border-bottom: 1px solid rgb(201, 200, 200); 
   display: flex;
   justify-content: flex-start;
-  /* padding-bottom:50px; */
+  padding-bottom:15px;
 
 }
 
@@ -1635,7 +1635,7 @@ form textarea{
 .nauru-map{
   /* border:2px solid green; */
   height: 450px;
-  width: 950px;
+  width: 100%;
   display: flex;
   /* margin-left:10px; */
   background-size: cover;
