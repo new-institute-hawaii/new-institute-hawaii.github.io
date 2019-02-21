@@ -550,10 +550,12 @@ grid-gap:10px;
 
 .subject-box{
   /* border:2px solid green; */
+  width:200px;
   height: 40px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   font-size: 1.5rem;
   color:rgba(0, 22, 82, 0.966);
   font-family: 'Josefin Sans', sans-serif;
